@@ -1,0 +1,35 @@
+.aboutYourProduct {
+    height: 345px;
+}
+
+.aboutYourProduct article {
+    font-family: Arial;
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 653px;
+    height: 143px;
+    margin-left: 50px;
+}
+
+.aboutYourProduct h3 {
+    font-family: Arial;
+    color:  #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.aboutYourProduct aside {
+    width: 430px;
+    height: 245px;
+    background-color:  #445161;
+    float: right;
+    margin-top: -65px;
+    margin-right: 50px;
+}
