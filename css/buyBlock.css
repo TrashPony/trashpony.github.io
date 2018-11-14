@@ -1,5 +1,4 @@
 #buyBlock {
-
 }
 
 #buyBlock > h1 {
@@ -18,13 +17,22 @@
     margin-left: 100px;
 }
 
+#buyBlock > div:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
+
 .buyBlockButton {
-    float: left;
     width: 300px;
     min-height: 306px;
     background-color: #425062;
     margin-left: 45px;
     border-radius: 5px;
+    bottom: 0;
+    vertical-align: bottom;
+    display: inline-block;
 }
 
 .buyBlockButton h1 {
@@ -74,4 +82,19 @@
     border: 0;
     margin-bottom: 20px;
     margin-left: 20px;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.buyBlockButton input:hover {
+    background-color: #b1d9ff;
+}
+
+.buyBlockButton input:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
 }
