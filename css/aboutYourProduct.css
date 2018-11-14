@@ -1,9 +1,8 @@
-.aboutYourProduct {
+main {
     height: 345px;
 }
 
-.aboutYourProduct article {
-    font-family: Arial;
+main article {
     color:  #333333;
     font-size: 16px;
     font-weight: 400;
@@ -14,8 +13,7 @@
     margin-left: 50px;
 }
 
-.aboutYourProduct h3 {
-    font-family: Arial;
+main h3 {
     color:  #445161;
     font-size: 30px;
     font-weight: 400;
@@ -25,7 +23,7 @@
     margin-top: 50px;
 }
 
-.aboutYourProduct aside {
+main aside {
     width: 430px;
     height: 245px;
     background-color:  #445161;

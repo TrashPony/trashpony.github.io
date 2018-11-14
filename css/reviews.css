@@ -1,0 +1,72 @@
+#Reviews {
+    height: 424px;
+    background-color: #f5f5f5;
+}
+
+#Reviews h1 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    float: left;
+    margin-left: 595px;
+    margin-top: 50px;
+}
+
+#Reviews article {
+    width: 640px;
+    height: 121px;
+    float: left;
+    margin-bottom: 24px;
+}
+
+#Reviews article div {
+    float: left;
+    border-radius: 50%;
+    background-color: #445161;
+    width: 75px;
+    height: 75px;
+    margin-left: 50px;
+}
+
+#Reviews article figure {
+    position: relative;
+    float: left;
+    width: 440px;
+    height: 91px;
+    margin: 0 0 0 16px;
+    background-color: #ececec;
+    border: 15px solid #ececec;
+    border-radius: 5px;
+}
+
+#Reviews article figure:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -33px;
+    top: 10px;
+    border: 10px solid;
+    border-color: transparent #ececec transparent transparent;
+}
+
+#Reviews article figure p {
+    color: #333333;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: left;
+    width: 450px;
+    height: 64px;
+    margin-top: 0;
+}
+
+#Reviews article figure figcaption {
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}

@@ -5,7 +5,6 @@
 
 .dignity h1 {
     float: left;
-    font-family: Arial;
     color: #445161;
     font-size: 30px;
     font-weight: 400;
@@ -28,7 +27,6 @@
     margin-top: 5px;
 }
 .dignity section span {
-    font-family: Arial;
     color: #333333;
     font-size: 16px;
     font-weight: 400;
