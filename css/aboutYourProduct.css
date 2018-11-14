@@ -3,7 +3,7 @@ main {
 }
 
 main article {
-    color:  #333333;
+    color: #333333;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -14,7 +14,7 @@ main article {
 }
 
 main h3 {
-    color:  #445161;
+    color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -26,7 +26,7 @@ main h3 {
 main aside {
     width: 430px;
     height: 245px;
-    background-color:  #445161;
+    background-color: #445161;
     float: right;
     margin-top: -65px;
     margin-right: 50px;
