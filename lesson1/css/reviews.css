@@ -13,14 +13,14 @@
     margin-top: 0;
 }
 
-#Reviews article {
+#Reviews .review {
     width: 640px;
     height: 121px;
     float: left;
     margin-bottom: 24px;
 }
 
-#Reviews article div {
+#Reviews .review div {
     float: left;
     border-radius: 50%;
     background-color: #445161;
@@ -29,7 +29,7 @@
     margin-left: 50px;
 }
 
-#Reviews article blockquote {
+#Reviews .review blockquote {
     position: relative;
     float: left;
     width: 440px;
@@ -40,7 +40,7 @@
     border-radius: 5px;
 }
 
-#Reviews article blockquote:before {
+#Reviews .review blockquote:before {
     content: ' ';
     position: absolute;
     width: 0;
@@ -51,7 +51,7 @@
     border-color: transparent #ececec transparent transparent;
 }
 
-#Reviews article blockquote p {
+#Reviews .review blockquote p {
     color: #333333;
     font-size: 14px;
     font-style: italic;
@@ -62,7 +62,7 @@
     margin-top: 0;
 }
 
-#Reviews article blockquote footer {
+#Reviews .review blockquote footer {
     color: #989898;
     font-size: 14px;
     font-weight: 400;
