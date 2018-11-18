@@ -4,16 +4,14 @@
     margin-top: 50px;
 }
 
-#Contacts h1 {
-    float: left;
-    margin-left: 582px;
-    margin-top: 53px;
+#Contacts h2 {
     color: #ffffff;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    text-align: left;
-    margin-bottom: 0;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
 }
 
 #Contacts address {
