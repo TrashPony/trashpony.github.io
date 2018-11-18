@@ -1,8 +1,8 @@
-main {
+#product {
     height: 345px;
 }
 
-main article {
+#product article {
     color: #333333;
     font-size: 16px;
     font-weight: 400;
@@ -13,21 +13,20 @@ main article {
     margin-left: 50px;
 }
 
-main h3 {
+#product article h3 {
     color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    margin-left: 50px;
     margin-top: 50px;
 }
 
-main aside {
+#product div {
     width: 430px;
     height: 245px;
     background-color: #445161;
     float: right;
-    margin-top: -65px;
+    margin-top: 0px;
     margin-right: 50px;
 }

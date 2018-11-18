@@ -2,16 +2,17 @@
     height: 487px;
 }
 
-#Scrinshots h1 {
-    margin: 51px 0 0 571px;
+#Scrinshots h2 {
+    padding-top: 50px;
+    margin: 0;
     color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    text-align: left;
+    text-align: center;
 }
 
-#Scrinshots section {
+#Scrinshots article {
     width: 575px;
     height: 151px;
     float: left;
@@ -19,24 +20,24 @@
     margin-left: 50px;
 }
 
-#Scrinshots section:nth-child(odd) {
+#Scrinshots article:nth-child(odd) {
     margin-left: 15px;
 }
 
-#Scrinshots section div {
+#Scrinshots article div {
     float: left;
     background-color: #445161;
     width: 200px;
     height: 150px;
 }
 
-#Scrinshots section aside {
+#Scrinshots article aside {
     float: left;
     width: 359px;
     margin-left: 15px;
 }
 
-#Scrinshots section h3 {
+#Scrinshots article h3 {
     color: #445161;
     font-size: 24px;
     font-weight: 400;
@@ -45,7 +46,7 @@
     margin: -10px 0 15px 0;
 }
 
-#Scrinshots section p {
+#Scrinshots article p {
     color: #333333;
     font-size: 16px;
     font-weight: 400;

@@ -3,15 +3,14 @@
     height: 417px;
 }
 
-.dignity h1 {
-    float: left;
+.dignity h3 {
     color: #445161;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    text-align: left;
-    margin-top: 50px;
-    margin-left: 464px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
 }
 
 .sectionImage {
@@ -27,7 +26,7 @@
     margin-top: 5px;
 }
 
-.dignity section span {
+.plus span {
     color: #333333;
     font-size: 16px;
     font-weight: 400;
@@ -39,7 +38,7 @@
     width: 530px;
 }
 
-.dignity section {
+.plus {
     float: left;
     width: 640px;
     height: 63px;
