@@ -1,0 +1,112 @@
+body {
+    font-family: Arial;
+}
+
+#main {
+    width: 1280px;
+    box-shadow: 0 0 2px black;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 740px) {
+    #main {
+        min-width: 600px;
+        max-width: 730px;
+    }
+}
+
+#main:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header {
+    background-color: #445162;
+}
+
+header:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header h1 {
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 740px) {
+    header h1{
+        margin-left: 130px;
+    }
+}
+
+header ul {
+    clear: both;
+    margin-left: 86px;
+    margin-top: 51px;
+    width: 430px;
+}
+
+
+@media screen and (max-width: 740px) {
+    header ul{
+        margin-left: 130px;
+    }
+}
+
+header ul li {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    list-style-image: url("../img/check.png");
+}
+
+header .imageHead {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 469px;
+    height: 214px;
+    background-color: #fff;
+    float: right;
+}
+
+@media screen and (max-width: 740px) {
+    header .imageHead {
+        clear: both;
+        float: left;
+        margin-left: 130px;
+        margin-bottom: 50px;
+    }
+}
+
+footer {
+    background-color: #f5f5f5;
+}
+
+footer:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+footer span {
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 4px;
+    display: block;
+}

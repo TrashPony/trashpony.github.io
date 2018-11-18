@@ -1,0 +1,148 @@
+#Contacts {
+    background-color: #445162;
+    margin-top: 50px;
+}
+
+#Contacts:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#Contacts h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+#Contacts address {
+    float: left;
+    width: 280px;
+    margin-left: 45px;
+    margin-top: 31px;
+}
+
+@media screen and (max-width: 740px) {
+    #Contacts address {
+        float: none;
+        margin: 30px auto 20px;
+    }
+}
+
+
+#Contacts address div {
+    width: 24px;
+    height: 24px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 29px;
+}
+
+@media screen and (max-width: 740px) {
+    #Contacts address div {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+
+#Contacts address span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 29px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 740px) {
+    #Contacts address span {
+        line-height: 48px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+}
+
+#Contacts address div:last-child {
+    width: 240px;
+    height: 42px;
+}
+
+#Contacts div:last-child {
+    margin-bottom: 20px;
+}
+
+#message {
+    float: left;
+    width: 500px;
+    margin-left: 249px;
+    margin-top: 31px;
+}
+
+@media screen and (max-width: 740px) {
+    #message {
+        float: none;
+        margin: 30px auto 20px;
+    }
+}
+
+
+#message input {
+    width: 490px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 21px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#message textarea {
+    border-radius: 5px;
+    width: 488px;
+    height: 157px;
+    padding-left: 10px;
+    padding-top: 13px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    border: 0;
+}
+
+#message input[type="submit"] {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 21px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#message input[type="submit"]:hover {
+    background-color: #b1d9ff;
+}
+
+#message input[type="submit"]:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}

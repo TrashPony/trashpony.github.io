@@ -1,0 +1,158 @@
+#buyBlock {
+}
+
+#buyBlock:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#buyBlock > h2 {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0;
+}
+
+#buyBlock > div {
+    float: left;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 740px) {
+    #buyBlock > div{
+        margin-left: 0;
+        float: none;
+    }
+}
+
+#buyBlock > div:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.buyBlockButton {
+    width: 300px;
+    min-height: 306px;
+    background-color: #425062;
+    margin-left: 45px;
+    border-radius: 5px;
+    bottom: 0;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+@media screen and (max-width: 740px) {
+    .buyBlockButton{
+        margin: 10px 70px;
+        width: 600px;
+        min-height: 612px;
+        border-radius: 10px;
+    }
+}
+
+.buyBlockButton h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 740px) {
+    .buyBlockButton h2{
+        margin-top: 32px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.buyBlockButton div {
+    width: 296px;
+    height: 55px;
+    background-color: #fff;
+    float: left;
+    margin-left: 2px;
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 740px) {
+    .buyBlockButton div{
+        width: 592px;
+        height: 110px;
+        font-size: 80px;
+        line-height: 60px;
+        margin-left: 4px;
+        padding-top: 32px;
+    }
+}
+
+.buyBlockButton ol {
+    float: left;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+@media screen and (max-width: 740px) {
+    .buyBlockButton ol{
+        font-size: 28px;
+        line-height: 48px;
+        margin-left: 40px;
+    }
+}
+
+.buyBlockButton ol li {
+
+}
+
+.buyBlockButton input {
+    float: left;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    width: 260px;
+    height: 40px;
+    border: 0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    box-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 740px) {
+    .buyBlockButton input{
+        border-radius: 10px;
+        width: 520px;
+        height: 80px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        font-size: 36px;
+        line-height: 3px;
+    }
+}
+
+.buyBlockButton input:hover {
+    background-color: #b1d9ff;
+}
+
+.buyBlockButton input:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
