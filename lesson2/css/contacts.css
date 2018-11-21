@@ -94,7 +94,7 @@
 }
 
 
-#message input {
+#message input, #message form div {
     width: 490px;
     height: 40px;
     border: 0;
@@ -111,7 +111,7 @@
 #message textarea {
     border-radius: 5px;
     width: 488px;
-    height: 157px;
+    height: 60px;
     padding-left: 10px;
     padding-top: 13px;
     color: #445162;
@@ -120,6 +120,32 @@
     line-height: 24px;
     text-align: left;
     border: 0;
+}
+
+#message form div {
+    line-height: 38px;
+    background-color: white;
+}
+
+#message input[type=color] {
+    width: 40px;
+    margin-right: 225px;
+    margin-top: -1px;
+    float: right;
+    padding: 0;
+}
+
+#message input[type=date] {
+    width: 128px;
+    padding: 0;
+    margin-right: 139px;
+    margin-top: -1px;
+    float: right;
+}
+
+#message input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
 }
 
 #message input[type="submit"] {

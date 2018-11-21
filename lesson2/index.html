@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
     <title>Title</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/aboutYourProduct.css" rel="stylesheet">
@@ -40,7 +40,7 @@
                     dolor.</p>
             </article>
             <div>
-                <video controls poster="img/poster.png">
+                <video controls poster="img/poster.png" preload="metadata">
                     <source src="mov/trailer.mp4" type="video/mp4">
                     <p>Your user agent does not support the HTML5 Video element.</p>
                 </video>
@@ -50,7 +50,7 @@
 
         <div class="dignity">
             <h3>Dignity and pluses product</h3>
-            <div class = "wrap">
+            <div class="wrap">
                 <div class="plus">
                     <div class="sectionImage"></div>
                     <span>Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam.
@@ -239,10 +239,15 @@
         <h2>Contacts</h2>
 
         <div id="message">
-            <input type="text" title="name" placeholder="Your name:">
-            <input type="email" title="email" placeholder="Your email:">
-            <textarea title="message" placeholder="Your message:"></textarea>
-            <input type="submit" value="SEND">
+            <form>
+                <input type="text" title="name" placeholder="Your name:" required  autofocus>
+                <input type="email" title="email" placeholder="Your email:" required  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <input type="tel" value="+7" title="phone" required  pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$">
+                <div style="display: inline-block; width: 200px;">Выберете цвет упаковки:</div><input type="color" title="color" value="#f6b73c">
+                <div style="display: inline-block; width: 200px;">Выберете дату доставки:</div><input type="date" required title="date">
+                <textarea title="message" placeholder="Your message:"></textarea>
+                <input type="submit" value="SEND">
+            </form>
         </div>
         <address>
             <div style='margin-top: 0; background-image: url("./img/skypeIcon.png")'></div>
