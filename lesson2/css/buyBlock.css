@@ -39,7 +39,7 @@
 .buyBlockButton {
     width: 300px;
     min-height: 306px;
-    background-color: #425062;
+    background: linear-gradient(45deg, #181b22 0%, #445162 50%, #abd9f9 120%);
     margin-left: 45px;
     border-radius: 5px;
     bottom: 0;
