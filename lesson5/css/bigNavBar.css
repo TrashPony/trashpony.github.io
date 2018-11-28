@@ -1,0 +1,58 @@
+#bigNavBar {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(250px, 1fr));
+    grid-gap: 50px;
+    align-items: center;
+    justify-items: center;
+    height: 373px;
+}
+
+#bigNavBar section {
+    width: 270px;
+    height: 204px;
+}
+
+#bigNavBar section object {
+    display: block;
+    margin: 0 auto;
+    width: 49px;
+    height: 49px;
+}
+
+#bigNavBar section object svg {
+    fill: #555555;
+}
+
+#bigNavBar section h4 {
+    font-family: Raleway;
+    color: #555555;
+    font-size: 22px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+    text-align: center;
+}
+
+#bigNavBar section p {
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+#bigNavBar section .bottomLine {
+    display: block;
+    width: 70px;
+    border-bottom: 3px solid #f1eee9;
+    margin: 0 auto;
+}
+
+#bigNavBar section:hover object svg,
+#bigNavBar section:hover h4 {
+    fill: #c7b299;
+    color: #c7b299;
+}
+
+#bigNavBar section:hover .bottomLine {
+    border-bottom: 3px solid #c7b299;
+}

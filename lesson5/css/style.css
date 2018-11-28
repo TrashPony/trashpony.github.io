@@ -1,0 +1,232 @@
+#container {
+    min-width: 1840px;
+    max-width: 1920px;
+
+    box-shadow: 0 0 2px black;
+}
+
+body {
+    margin: 0;
+    /* font-family: Raleway; todo найти подлкючить */
+    /* font-family: Montserrat; todo найти подлкючить */
+
+}
+
+input[type="submit"]{
+    width: 170px;
+    height: 53px;
+    border-radius: 3px;
+    border: 0;
+    background-color:  #998675;
+    box-shadow: 0 3px 0 0 #716154;
+    outline: none;
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 23px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+input[type="submit"]:hover{
+    background-color: #bba793;
+}
+
+input[type="submit"]:active{
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+}
+
+.pageHead {
+    font-family: Raleway;
+    color:  #555555;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+    text-align: center;
+}
+
+.pageParagraph {
+    font-family: Montserrat;
+    color:  #8c8c8c;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+header {
+    background: url("../img/header.png") 0 0 / cover;
+}
+
+header:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header .headLogo {
+    width: 181px;
+    height: 56px;
+    float: left;
+    margin-left: 186px;
+    margin-top: 40px;
+}
+
+header .headLogo .logo {
+    width: 64px;
+    height: 56px;
+    background: url("../img/logos.png") 0 0 / contain;
+    float: left;
+}
+
+header .headLogo h3 {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 34px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: right;
+    float: left;
+    margin-top: 12px;
+}
+
+header .menu {
+    float: left;
+    margin-left: 219px;
+    margin-top: 50px;
+}
+
+header .menu li {
+    float: left;
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+header .menu a {
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    text-decoration: none;
+}
+
+header .menu a:hover {
+    color: #c7b29a;
+}
+
+header .menu .iconCart, header .menu .iconSearch {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-left: 28px;
+}
+
+header .menu .iconCart {
+    background: url("../img/icon-cart.png") center center / contain no-repeat;
+}
+
+header .menu .iconSearch {
+    background: url("../img/icon-search.png") 0 0 / contain no-repeat;
+}
+
+header .leftArrow {
+    margin-top: 475px;
+    margin-left: 150px;
+    float: left;
+    width: 40px;
+    height: 73px;
+    background: url("../img/noActiveArrow.png") 0 0 / contain no-repeat;
+}
+
+header .leftArrow:hover {
+    transform: rotate(180deg);
+    background: url("../img/activeArrow.png") 0 0 / contain no-repeat;
+}
+
+header .rightArrow {
+    margin-top: 385px;
+    margin-right: 150px;
+    float: right;
+    width: 40px;
+    height: 73px;
+    background: url("../img/noActiveArrow.png") 0 0 / contain no-repeat;
+    transform: rotate(180deg);
+}
+
+header .rightArrow:hover {
+    transform: rotate(0deg);
+    background: url("../img/activeArrow.png") 0 0 / contain no-repeat;
+}
+
+header .headText {
+    margin-left: 109px;
+    margin-top: 354px;
+    width: 589px;
+    float: left;
+    text-align: center;
+}
+
+header .headText h2 {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 500;
+    text-align: center;
+    margin: 7px;
+}
+
+header .headText h3 {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 52px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    margin: 7px;
+}
+
+header .headText p {
+    margin: 12px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+header .headText input {
+    margin: 0 auto;
+}
+
+header .navSlider {
+    float: right;
+    width: 100%;
+    margin-top: 329px;
+    margin-bottom: 42px;
+}
+header .navSlider ul {
+    width: 125px;
+    margin-left: calc(50% - 100px);
+}
+
+header .navSlider ul li {
+    float: left;
+    list-style-type: none;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+header .navSlider ul li:hover {
+    background-color: transparent;
+    border: 2px solid #d3c1ad;
+    transform: scale(1.3);
+}
+
+header .navSlider ul li:active {
+    transform: scale(0.5);
+}

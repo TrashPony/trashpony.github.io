@@ -1,0 +1,14 @@
+#screenShot {
+    position: relative;
+    background-color:  #fbfaf8;
+}
+
+#screenShot h2 {
+    text-align: center;
+    padding-top: 83px;
+}
+
+#screenShot p {
+    margin: auto;
+    width: 757px;
+}
