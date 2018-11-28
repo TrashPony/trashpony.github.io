@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Waxom</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+    </style>
+
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bigNavBar.css" rel="stylesheet">
     <link href="css/screenShot.css" rel="stylesheet">
@@ -41,7 +46,7 @@
             <h3>Portfolio PSD Template</h3>
             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat
                 facer possim assum.</p>
-            <input type="submit" value="GET STARTED">
+            <input class="pageButton" type="submit" value="GET STARTED">
         </div>
 
         <div class="rightArrow"></div>
@@ -121,7 +126,7 @@
                     <h3><span style="color: #c7b299;">Waxom</span> Multipurpose WordPress Theme</h3>
                     <h4>Don't Forget to Rate the Template. Thanks so much!</h4>
                 </div>
-                <input type="submit" value="PURCHASE NOW" style="margin-left: 470px;">
+                <input class="pageButton" type="submit" value="PURCHASE NOW" style="margin-left: 470px;">
             </div>
         </section>
 
@@ -131,24 +136,24 @@
                 Claritas est etiam
                 processus dynamicus, qui sequitur mutationem consuetudium.</p>
             <ul class="LatestProjectMenu">
-                <li><a href="#">All</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Mobile App</a></li>
-                <li><a href="#">Illustration</a></li>
-                <li><a href="#">Photography</a></li>
+                <li><input type="submit" value="All"></li>
+                <li><input type="submit" value="Web Design"></li>
+                <li><input type="submit" value="Mobile App"></li>
+                <li><input type="submit" value="Illustration"></li>
+                <li><input type="submit" value="Photography"></li>
             </ul>
 
-            <div>
+            <div id="LatestProjectGrid">
                 <!--todo тут надо попробовать гриды -->
-                <div class="LatestProjectImg"></div>
-                <div class="LatestProjectImg"></div>
-                <div class="LatestProjectImg"></div>
-                <div class="LatestProjectImg"></div>
-                <div class="LatestProjectImg"></div>
-                <div class="LatestProjectImg"></div>
+                <div style="grid-column: 2/3;" class="LatestProjectImg" ></div>
+                <div style="grid-column: 3/4;" class="LatestProjectImg"></div>
+                <div style="grid-column: 4/5;"class="LatestProjectImg"></div>
+                <div style="grid-row: 2; grid-column: 2/3;" class="LatestProjectImg"></div>
+                <div style="grid-row: 2; grid-column: 3/4;" class="LatestProjectImg"></div>
+                <div style="grid-row: 2; grid-column: 4/5;" class="LatestProjectImg"></div>
             </div>
 
-            <input type="submit" value="LOAD MORE">
+            <input style="margin-top: 40px;margin-bottom: 80px" class="pageButton" type="submit" value="LOAD MORE">
         </section>
 
         <section id="video">

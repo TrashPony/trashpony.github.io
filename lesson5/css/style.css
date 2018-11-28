@@ -5,14 +5,16 @@
     box-shadow: 0 0 2px black;
 }
 
-body {
-    margin: 0;
-    /* font-family: Raleway; todo найти подлкючить */
-    /* font-family: Montserrat; todo найти подлкючить */
-
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Light.ttf);
 }
 
-input[type="submit"]{
+body {
+    margin: 0;
+}
+
+.pageButton {
     width: 170px;
     height: 53px;
     border-radius: 3px;
@@ -28,11 +30,11 @@ input[type="submit"]{
     text-align: center;
 }
 
-input[type="submit"]:hover{
+.pageButton:hover{
     background-color: #bba793;
 }
 
-input[type="submit"]:active{
+.pageButton:active{
     position: relative;
     top: 3px;
     box-shadow: none;
@@ -162,7 +164,7 @@ header .rightArrow:hover {
 header .headText {
     margin-left: 109px;
     margin-top: 354px;
-    width: 589px;
+    width: 590px;
     float: left;
     text-align: center;
 }
