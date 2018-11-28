@@ -1,5 +1,5 @@
 #Contacts {
-    background-color: #445162;
+    background: 100px 100px no-repeat, linear-gradient(45deg, #181b22 0%, #445162 50%, #abd9f9 120%);
     margin-top: 50px;
 }
 

@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: #445162;
+    background: 100px 100px no-repeat, linear-gradient(45deg, #181b22 0%, #445162 50%, #abd9f9 120%);
 }
 
 header:after {
@@ -43,7 +43,7 @@ header h1 {
 }
 
 @media screen and (max-width: 740px) {
-    header h1{
+    header h1 {
         margin-left: 130px;
     }
 }
@@ -55,9 +55,8 @@ header ul {
     width: 430px;
 }
 
-
 @media screen and (max-width: 740px) {
-    header ul{
+    header ul {
         margin-left: 130px;
     }
 }
@@ -77,8 +76,21 @@ header .imageHead {
     margin-right: 50px;
     width: 469px;
     height: 214px;
-    background-color: #fff;
     float: right;
+
+    background: url("../img/sun.svg") 10px 10px / 50px 50px no-repeat,
+                url("../img/cloud.svg") 350px 10px / 60px no-repeat,
+                url("../img/cloud.svg") 100px 10px / 60px no-repeat,
+                url("../img/cloud.svg") 190px 10px / 60px no-repeat,
+
+                url("../img/meteor.svg") 280px 10px / 60px no-repeat,
+                url("../img/dino.svg") center 100px / 100px 100px no-repeat,
+
+                url("../img/butterfly.svg") 100px 100px / 10px no-repeat,
+                url("../img/butterfly.svg") 350px 70px / 15px no-repeat,
+
+                url("../img/cactus.svg") 50px 80px / 40px no-repeat,
+                url("../img/cactus.svg") 300px 100px / 60px no-repeat #ffffff;
 }
 
 @media screen and (max-width: 740px) {
@@ -107,6 +119,5 @@ footer span {
     letter-spacing: 0.3px;
     line-height: 24px;
     text-align: center;
-    margin-top: 4px;
     display: block;
 }
