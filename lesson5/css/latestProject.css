@@ -1,0 +1,38 @@
+#LatestProject {
+
+}
+
+#LatestProject h2 {
+    padding-top: 81px;
+}
+#LatestProject  .LatestProjectMenu{
+    margin: 0 auto;
+}
+
+#LatestProject  .LatestProjectMenu:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#LatestProject .LatestProjectMenu li {
+    margin-left: 28px;
+    list-style-type: none;
+    float: left;
+    border-radius: 3px;
+    background-color: rgba(17, 17, 17, 0);
+    height: 32px;
+    min-width: 70px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+}
+
+#LatestProject .LatestProjectMenu li a {
+    font-family: Montserrat;
+    color:  #8c8c8c;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+}
