@@ -11,13 +11,13 @@
     margin: auto;
 }
 
-#LatestProject  .LatestProjectMenu{
+#LatestProject .LatestProjectMenu {
     margin: 40px auto;
     max-width: 630px;
     padding: 0;
 }
 
-#LatestProject  .LatestProjectMenu:after {
+#LatestProject .LatestProjectMenu:after {
     content: '';
     clear: both;
     display: block;
@@ -36,8 +36,8 @@
 
 #LatestProject .LatestProjectMenu li input {
     font-family: Montserrat;
-    color:  #8c8c8c;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    color: #8c8c8c;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
     line-height: 32px;
     text-decoration: none;
@@ -52,13 +52,12 @@
 
 #LatestProject .LatestProjectMenu li input:hover {
     background-color: #d0bba7;
-    color:  #ffffff;
+    color: #ffffff;
 }
-
 
 #LatestProject .LatestProjectMenu li input:focus {
     background-color: #998675;
-    color:  #ffffff;
+    color: #ffffff;
 }
 
 #LatestProjectGrid {
@@ -73,5 +72,101 @@
 #LatestProjectGrid .LatestProjectImg {
     width: 370px;
     height: 337px;
-    outline: 1px solid red;
+}
+
+.LatestProjectImg:hover .LatestProjectImgFooter {
+    background-color: #362f2d;
+}
+
+.LatestProjectImg:hover .LatestProjectImgFooter:before {
+    border-bottom-color: #362f2d;
+}
+
+
+.LatestProjectImgPhoto {
+    position: relative;
+    width: 370px;
+    height: 237px;
+}
+
+.LatestProjectImgPhoto svg {
+    position: absolute;
+    top: 106px;
+    left: 192px;
+    fill: #ffffff;
+    opacity: 0;
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.LatestProjectImgPhoto div {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 1;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.LatestProjectImgPhoto svg:hover {
+    fill: #c7b299;
+}
+
+.LatestProjectImgPhoto:hover div {
+    opacity: 1;
+}
+
+.LatestProjectImgPhoto svg:first-child {
+    left: 144px;
+}
+
+.LatestProjectImg:hover svg {
+    opacity: 1;
+}
+
+.LatestProjectImgFooter {
+    position: relative;
+    width: 370px;
+    height: 100px;
+    background-color: #fbfaf8;
+    transition: 0.4s;
+}
+
+.LatestProjectImgFooter:before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: -25px;
+    border: 15px solid transparent;
+    border-bottom: 10px solid #fbfaf8;
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.LatestProjectImgFooter h4, h3 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-left: 28px;
+    margin-bottom: -10px;
+}
+
+.LatestProjectImgFooter h4 {
+    font-family: Raleway;
+    color: #c7b29a;
+    font-size: 20px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.LatestProjectImgFooter h3 {
+    font-family: Montserrat;
+    color: #d1d1d1;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 20px; /* Приближение из-за подстановки шрифтов */
+    margin-top: 14px;
 }

@@ -12,14 +12,14 @@
     height: 204px;
 }
 
-#bigNavBar section object {
+#bigNavBar section svg {
     display: block;
     margin: 0 auto;
     width: 49px;
     height: 49px;
 }
 
-#bigNavBar section object svg {
+#bigNavBar section svg {
     fill: #555555;
 }
 
@@ -47,7 +47,7 @@
     margin: 0 auto;
 }
 
-#bigNavBar section:hover object svg,
+#bigNavBar section:hover svg,
 #bigNavBar section:hover h4 {
     fill: #c7b299;
     color: #c7b299;
