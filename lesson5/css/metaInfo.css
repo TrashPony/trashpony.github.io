@@ -1,0 +1,53 @@
+#metaInfo {
+    min-height: 508px;
+    background-color:  #191919;
+    display: grid;
+    grid-template-columns: 338px repeat(4, 258px) 338px;
+    grid-gap: 42px;
+}
+
+#metaInfo hr {
+    background-color:  #252525;
+    width: 270px;
+    height: 2px;
+    border: 0;
+}
+
+#metaInfo > div {
+    width: 258px;
+    margin-top: 80px;
+}
+
+#metaInfo .headLogo {
+    margin: 0;
+    float: none;
+}
+
+#metaInfo h4 {
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+#metaInfo p {
+    font-family: Montserrat;
+    color:  #545454;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin: 2px 0 21px;
+}
+
+#metaInfo .datePost {
+    font-family: Montserrat;
+    color:  #363636;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 20px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin: 0;
+}

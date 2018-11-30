@@ -1,0 +1,42 @@
+#mobDevice {
+
+}
+
+#mobDevice div {
+    float: left;
+    width: 423px;
+    height: 616px;
+    background-image: url("../img/iPhone.png");
+    margin-top: 79px;
+    margin-left: 423px;
+}
+
+#mobDevice aside {
+    margin-top: 195px;
+    float: left;
+    width: 657px;
+}
+
+#mobDevice aside h2, #mobDevice aside p {
+    text-align: left;
+}
+
+#mobDevice ul {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 100%;
+}
+
+#mobDevice li {
+    background: url(../img/ul.png) no-repeat left center;
+    padding-left: 30px;
+    list-style-type: none;
+    margin-bottom: 12px;
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 32px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    width: 100%;
+}

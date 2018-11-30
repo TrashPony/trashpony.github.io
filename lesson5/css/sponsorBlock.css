@@ -1,0 +1,16 @@
+#sponsorBlock {
+    background-image: url("../img/photo_12.png");
+    min-height: 489px;
+    display: grid;
+    grid-template-columns: 316px repeat(4, 210px) 314px;
+    grid-gap: 90px;
+}
+
+#sponsorBlock img {
+    margin-top: 140px;
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
+    object-position: center center;
+}
+

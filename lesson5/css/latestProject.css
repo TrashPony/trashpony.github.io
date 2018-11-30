@@ -146,7 +146,7 @@
     transition: 0.4s;
 }
 
-.LatestProjectImgFooter h4, h3 {
+.LatestProjectImgFooter h4, .LatestProjectImgFooter h3 {
     float: left;
     width: 100%;
     text-align: left;
@@ -169,4 +169,38 @@
     font-weight: 300;
     line-height: 20px; /* Приближение из-за подстановки шрифтов */
     margin-top: 14px;
+}
+
+#ArrowsRecentPosts {
+    width: 55px;
+    height: 22px;
+    margin: 40px auto;
+}
+
+#ArrowsRecentPosts .leftArrowRecentPosts {
+    float: left;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/noActive.png");
+    transition: 0.3s;
+}
+
+#ArrowsRecentPosts .leftArrowRecentPosts:hover {
+    background-image: url("../img/active.png");
+    transform: rotate(180deg);
+}
+
+#ArrowsRecentPosts .rightArrowRecentPosts {
+    float: left;
+    margin-left: 10px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/noActive.png");
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+#ArrowsRecentPosts .rightArrowRecentPosts:hover {
+    background-image: url("../img/active.png");
+    transform: rotate(0deg);
 }

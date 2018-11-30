@@ -1,0 +1,49 @@
+#statusBar {
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 410px repeat(5, 140px) 410px;
+    grid-gap: 73px;
+    align-items: center;
+    justify-items: center;
+    height: 300px;
+}
+
+#statusBar > div {
+    height: 171px;
+    width: 140px;
+    text-align: center;
+}
+
+#statusBar > div div {
+    width: 30px;
+    height: 0;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 25%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#statusBar img {
+    width: 44px;
+    height: 44px;
+}
+
+#statusBar h3, #statusBar h4 {
+    margin: 30px 0 21px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 48px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 200;
+    line-height: 36px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+#statusBar h4 {
+    margin: 0;
+    color: #c7b299;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 20px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}

@@ -67,7 +67,7 @@ header:after {
     display: block;
 }
 
-header .headLogo {
+.headLogo {
     width: 185px;
     height: 56px;
     float: left;
@@ -75,14 +75,14 @@ header .headLogo {
     margin-top: 40px;
 }
 
-header .headLogo .logo {
+.headLogo .logo {
     width: 64px;
     height: 56px;
     background: url("../img/logos.png") 0 0 / contain;
     float: left;
 }
 
-header .headLogo h3 {
+.headLogo h3 {
     width: 80px;
     font-family: Raleway;
     color: #ffffff;

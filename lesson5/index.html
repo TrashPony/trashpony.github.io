@@ -6,6 +6,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
     </style>
 
     <link href="css/style.css" rel="stylesheet">
@@ -13,6 +14,11 @@
     <link href="css/screenShot.css" rel="stylesheet">
     <link href="css/latestProject.css" rel="stylesheet">
     <link href="css/video.css" rel="stylesheet">
+    <link href="css/mobDevice.css" rel="stylesheet">
+    <link href="css/statusBar.css" rel="stylesheet">
+    <link href="css/recentPosts.css" rel="stylesheet">
+    <link href="css/sponsorBlock.css" rel="stylesheet">
+    <link href="css/metaInfo.css" rel="stylesheet">
 </head>
 <body>
 <div id="container">
@@ -256,9 +262,9 @@
             <!--todo тег видео во всю ширену с подгоном размера -->
         </div>
 
-        <section id="mobDevice">
+        <div id="mobDevice">
             <div></div>
-            <article>
+            <aside>
                 <h2 class="pageHead">Excellent for Mobile Devices.</h2>
                 <p class="pageParagraph">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
                     lobortis nisl ut aliquip
@@ -272,43 +278,41 @@
                     <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
                     <li>Investigationes demonstraverunt lectores</li>
                 </ul>
-            </article>
-        </section>
+            </aside>
+        </div>
 
-        <section id="statusBar">
-            <!--todo тут надо попробовать гриды -->
-            <!--todo все буквы заглавными -->
-            <div>
-                <img src="#">
+        <div id="statusBar" style="clear: both">
+            <div style="grid-column: 2/3;">
+                <img src="img/status_icon_2.png">
                 <h3>3587</h3>
                 <h4>Satisfied Clients</h4>
                 <div></div>
             </div>
             <div>
-                <img src="#">
+                <img src="img/icon.png">
                 <h3>207</h3>
                 <h4>Cups of coffee</h4>
                 <div></div>
             </div>
             <div>
-                <img src="#">
+                <img src="img/icon_4.png">
                 <h3>2500</h3>
                 <h4>Blog posts</h4>
                 <div></div>
             </div>
             <div>
-                <img src="#">
+                <img src="img/status_icon_3.png">
                 <h3>873</h3>
                 <h4>Likes</h4>
                 <div></div>
             </div>
             <div>
-                <img src="#">
+                <img src="img/status_icon_1.png">
                 <h3>900</h3>
                 <h4>We launched</h4>
                 <div></div>
             </div>
-        </section>
+        </div>
 
         <section id="recentPosts">
             <h2 class="pageHead">Recent Posts.</h2>
@@ -316,34 +320,55 @@
                 Claritas est etiam
                 processus dynamicus, qui sequitur mutationem consuetudium.</p>
 
-            <div>
-                <!--todo гриды С: -->
-                <div>
-                    <div class="headImage">
-                        <div class="calendar"></div>
+            <div id="recentPostsGrid">
+                <div style="grid-column: 2/3;">
+                    <div class="postImage" style="background-image: url('img/photo_9.png')">
+                        <div class="calendar">
+                            <div></div>
+                            <div></div>
+                        </div>
                         <!-- todo <div></div> слайдер?  -->
-                        <h4>Lorem ipsum dolor sit amet</h4>
-                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                        <a href="#">Read More</a> <!--todo стрелочка -->
+                        <div class="back"></div>
                     </div>
-
-                    <div class="headImage">
-                        <div class="calendar"></div>
+                    <div class="postFooter">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                        <a href="#">Read More</a> <!--todo стрелочка -->
+                        <a href="#">Read More</a>
                     </div>
+                </div>
 
-                    <div class="headImage">
-                        <div class="calendar"></div>
+                <div>
+                    <div class="postImage" style="background-image: url('img/photo_10.png')">
+                        <div class="calendar">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="back"></div>
+                    </div>
+                    <div class="postFooter">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                        <a href="#">Read More</a> <!--todo стрелочка -->
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="postImage" style="background-image: url('img/photo_11.png')">
+                        <div class="calendar">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="back"></div>
+                    </div>
+                    <div class="postFooter">
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div id="ArrowsRecentPosts">
                 <div class="leftArrowRecentPosts"></div>
                 <div class="rightArrowRecentPosts"></div>
             </div>
@@ -351,20 +376,19 @@
     </main>
 
     <div id="sponsorBlock">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <a href="#" style="grid-column: 2/3;"><img src="img/logo-01.png"></a>
+        <a href="#"><img src="img/logo-02.png"></a>
+        <a href="#"><img src="img/logo-03.png"></a>
+        <a href="#"><img src="img/logo-04.png"></a>
     </div>
 
     <div id="metaInfo">
-        <div>
+        <div style="grid-column: 2/3;">
             <div class="headLogo">
                 <div class="logo"></div>
                 <h3>Waxom</h3>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            <p style="margin-top: 30px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit
                 lobortis claritatem.
             </p>
@@ -373,27 +397,26 @@
 
         <div>
             <h4>Recent Posts</h4>
-            <p>September 08, 2015</p>
+            <p class="datePost">September 08, 2015</p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
             <hr>
-            <p>September 08, 2015</p>
+            <p class="datePost">September 08, 2015</p>
             <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
             <hr>
-            <p>September 08, 2015</p>
+            <p class="datePost">September 08, 2015</p>
             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
-            <hr>
         </div>
 
         <div>
             <h4>Our Twitter</h4>
-            <p>@waxom Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
-            <p>3 mins ago</p>
+            <p style="margin: 2px 0 2px;">@waxom Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+            <p class="datePost">3 mins ago</p>
             <hr>
-            <p>Mirum est #envato notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
-            <p>5 hours ago</p>
+            <p style="margin: 2px 0 2px;">Mirum est #envato notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+            <p class="datePost">5 hours ago</p>
             <hr>
-            <p>Soluta nobis option bit.ly/1Hniso7</p>
-            <p>20 days ago</p>
+            <p style="margin: 2px 0 2px;">Soluta nobis option bit.ly/1Hniso7</p>
+            <p class="datePost">20 days ago</p>
         </div>
 
         <div>
