@@ -19,22 +19,22 @@ body {
     height: 53px;
     border-radius: 3px;
     border: 0;
-    background-color:  #998675;
+    background-color: #998675;
     box-shadow: 0 3px 0 0 #716154;
     outline: none;
     font-family: Raleway;
-    color:  #ffffff;
-    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    color: #ffffff;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
     font-weight: 700;
-    line-height: 23px;/* Приближение из-за подстановки шрифтов */
+    line-height: 23px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
 }
 
-.pageButton:hover{
+.pageButton:hover {
     background-color: #bba793;
 }
 
-.pageButton:active{
+.pageButton:active {
     position: relative;
     top: 3px;
     box-shadow: none;
@@ -42,19 +42,69 @@ body {
 
 .pageHead {
     font-family: Raleway;
-    color:  #555555;
-    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    color: #555555;
+    font-size: 30px; /* Приближение из-за подстановки шрифтов */
     font-weight: 600;
     text-align: center;
 }
 
 .pageParagraph {
     font-family: Montserrat;
-    color:  #8c8c8c;
-    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    color: #8c8c8c;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
     font-weight: 300;
-    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
     text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .pageHead {
+        font-size: 4vw;
+    }
+
+    .pageParagraph {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+
+    .pageButton {
+        width: 250px;
+        height: 76px;
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+}
+
+@media (max-width: 760px) {
+    .pageHead {
+        font-size: 6vw;
+    }
+
+    .pageParagraph {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .pageButton {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .pageHead {
+        font-size: 10vw;
+    }
+
+    .pageParagraph {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    .pageButton {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
 }
 
 header {
@@ -208,6 +258,7 @@ header .navSlider {
     margin-top: 329px;
     margin-bottom: 42px;
 }
+
 header .navSlider ul {
     width: 125px;
     margin-left: calc(50% - 100px);
@@ -232,4 +283,64 @@ header .navSlider ul li:hover {
 
 header .navSlider ul li:active {
     transform: scale(0.5);
+}
+
+@media (max-width: 1200px) {
+
+    #container {
+        width: 100%;
+    }
+
+    header .headText {
+        width: 750px;
+        margin-left: 0;
+    }
+
+    header .headText h2 {
+        font-size: 4vw;
+    }
+
+    header .headText h3 {
+        font-size: 5vw;
+    }
+
+    header .headText p {
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+
+    header input {
+        margin-top: 70px !important;
+        margin-bottom: -70px !important;
+    }
+}
+
+@media (max-width: 760px) {
+    header .headText h2 {
+        font-size: 6vw;
+    }
+
+    header .headText h3 {
+        font-size: 8vw;
+    }
+
+    header .headText p {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    header .headText h2 {
+        font-size: 10vw;
+    }
+
+    header .headText h3 {
+        font-size: 13vw;
+    }
+
+    header .headText p {
+        font-size: 5vw;
+        line-height: 5vw;
+    }
 }

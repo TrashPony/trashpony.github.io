@@ -204,3 +204,29 @@
     background-image: url("../img/active.png");
     transform: rotate(0deg);
 }
+
+@media (max-width: 1200px) {
+    #LatestProjectGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #LatestProjectGrid .LatestProjectImg {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+    #LatestProject p {
+        width: 1160px;
+    }
+}
+
+@media (max-width: 760px) {
+    #LatestProjectGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, minmax(337px, 1fr));
+
+    }
+}
+
+@media (max-width: 500px) {
+
+}

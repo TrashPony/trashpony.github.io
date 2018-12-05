@@ -7,6 +7,49 @@
     height: 373px;
 }
 
+@media (max-width: 1200px) {
+    #bigNavBar {
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
+    }
+
+    #bigNavBar section:first-child {
+        grid-column: 1/2 !important;
+    }
+    #bigNavBar section p {
+        font-size: 4vh !important;
+        line-height: 30px !important;
+    }
+}
+
+@media (max-width: 760px) {
+    #bigNavBar {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-auto-rows: auto;
+        height: 600px;
+    }
+
+    #bigNavBar section {
+        width: 100% !important;
+    }
+
+    #bigNavBar section p {
+        font-size: 6vh !important;
+        line-height: 9vh !important;
+    }
+}
+
+@media (max-width: 500px) {
+    #bigNavBar {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        height: 1200px;
+    }
+
+    #bigNavBar section {
+        width: 50% !important;
+    }
+}
+
 #bigNavBar section {
     width: 270px;
     height: 204px;

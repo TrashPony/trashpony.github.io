@@ -74,3 +74,23 @@
     text-align: left;
     margin: 8px 0 49px;
 }
+
+@media (max-width: 1200px) {
+    #screenShot p {
+        width: 80% !important;
+        font-size: 30px !important;
+        line-height: 30px !important;
+    }
+}
+
+@media (max-width: 760px) {
+    #screenShot p {
+        width: 100% !important;
+        font-size: 35px !important;
+        line-height: 35px !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+}

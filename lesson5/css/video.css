@@ -56,3 +56,9 @@
     text-align: center;
     padding-top: 40px;
 }
+
+@media screen and (max-width: 1200px)  {
+    #video .play {
+        margin-left: 865px;
+    }
+}

@@ -168,3 +168,17 @@
     content: 'Sep.';
     line-height: 25px;
 }
+
+@media (max-width: 1200px) {
+    #recentPosts > p {
+        width: 1430px;
+    }
+
+    #recentPostsGrid {
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr) );;
+    }
+
+    #recentPostsGrid div {
+        grid-column: auto !important;
+    }
+}
