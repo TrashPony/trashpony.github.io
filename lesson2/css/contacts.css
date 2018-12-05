@@ -29,7 +29,8 @@
 @media screen and (max-width: 740px) {
     #Contacts address {
         float: none;
-        margin: 30px auto 20px;
+        margin: 30px auto 0;
+        width: 320px;
     }
 }
 
