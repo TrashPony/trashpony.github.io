@@ -11,6 +11,12 @@
     margin: auto;
 }
 
+@media (max-width: 757px) {
+    #LatestProject p {
+        width: 100%;
+    }
+}
+
 #LatestProject .LatestProjectMenu {
     margin: 40px auto;
     max-width: 630px;
@@ -31,7 +37,7 @@
     height: 32px;
     min-width: 70px;
     text-align: center;
-
+    margin-top: 10px;
 }
 
 #LatestProject .LatestProjectMenu li input {
@@ -62,11 +68,23 @@
 
 #LatestProjectGrid {
     display: grid;
-    grid-template-columns: 346px repeat(auto-fill, 370px) 344px;
+    grid-template-columns: minmax(0px, 1fr) repeat(auto-fit, 370px) minmax(0px, 1fr);
     grid-template-rows: repeat(2, minmax(337px, 1fr));
     grid-gap: 30px;
     align-items: center;
     justify-items: center;
+}
+
+@media (max-width: 1240px) {
+    #LatestProjectGrid {
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-rows: 337px auto;
+    }
+
+    #LatestProjectGrid .LatestProjectImg {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
 }
 
 #LatestProjectGrid .LatestProjectImg {
@@ -203,30 +221,4 @@
 #ArrowsRecentPosts .rightArrowRecentPosts:hover {
     background-image: url("../img/active.png");
     transform: rotate(0deg);
-}
-
-@media (max-width: 1200px) {
-    #LatestProjectGrid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #LatestProjectGrid .LatestProjectImg {
-        grid-column: auto !important;
-        grid-row: auto !important;
-    }
-    #LatestProject p {
-        width: 1160px;
-    }
-}
-
-@media (max-width: 760px) {
-    #LatestProjectGrid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, minmax(337px, 1fr));
-
-    }
-}
-
-@media (max-width: 500px) {
-
 }

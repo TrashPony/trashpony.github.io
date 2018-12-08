@@ -1,8 +1,9 @@
 #container {
     min-width: 1840px;
     max-width: 1920px;
-
+    margin: 0 auto;
     box-shadow: 0 0 2px black;
+    overflow: hidden;
 }
 
 @font-face {
@@ -57,56 +58,6 @@ body {
     text-align: center;
 }
 
-@media (max-width: 1200px) {
-    .pageHead {
-        font-size: 4vw;
-    }
-
-    .pageParagraph {
-        font-size: 3vw;
-        line-height: 3vw;
-    }
-
-    .pageButton {
-        width: 250px;
-        height: 76px;
-        font-size: 2vw;
-        line-height: 2vw;
-    }
-}
-
-@media (max-width: 760px) {
-    .pageHead {
-        font-size: 6vw;
-    }
-
-    .pageParagraph {
-        font-size: 4vw;
-        line-height: 4vw;
-    }
-
-    .pageButton {
-        font-size: 3vw;
-        line-height: 3vw;
-    }
-}
-
-@media (max-width: 500px) {
-    .pageHead {
-        font-size: 10vw;
-    }
-
-    .pageParagraph {
-        font-size: 4vw;
-        line-height: 4vw;
-    }
-
-    .pageButton {
-        font-size: 4vw;
-        line-height: 4vw;
-    }
-}
-
 header {
     background: url("../img/header.png") 0 0 / cover;
 }
@@ -120,9 +71,21 @@ header:after {
 .headLogo {
     width: 185px;
     height: 56px;
-    float: left;
-    margin-left: 186px;
-    margin-top: 40px;
+    position: absolute;
+    left: 325px;
+    top: 50px;
+}
+
+@media (max-width: 1540px) {
+    .headLogo {
+        left: 150px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .headLogo {
+        left: 50px;
+    }
 }
 
 .headLogo .logo {
@@ -144,9 +107,9 @@ header:after {
 }
 
 header .menu {
-    float: left;
-    margin-left: 219px;
-    margin-top: 50px;
+    position: absolute;
+    top: 50px;
+    right: 200px;
 }
 
 header .menu li {
@@ -175,6 +138,35 @@ header .menu .iconCart, header .menu .iconSearch {
     margin-left: 28px;
 }
 
+@media (max-width: 1350px) {
+
+    header .menu ul {
+        overflow: hidden;
+        height: 30px;
+    }
+
+    header .menu li {
+        float: none;
+        margin: 0;
+        width: 30px;
+        height: 3px;
+        background: #ffffff;
+        margin-top: 3px;
+        border-radius: 20px;
+    }
+
+    header .menu a {
+        color: transparent;
+    }
+}
+
+@media (max-width: 1000px) {
+    header .menu {
+        top: 50px;
+        right: 50px;
+    }
+}
+
 header .menu .iconCart {
     background: url("../img/icon-cart.png") center center / contain no-repeat;
 }
@@ -184,12 +176,31 @@ header .menu .iconSearch {
 }
 
 header .leftArrow {
-    margin-top: 475px;
-    margin-left: 150px;
-    float: left;
+    position: absolute;
+    top: 475px;
+    left: 150px;
     width: 40px;
     height: 73px;
     background: url("../img/noActiveArrow.png") 0 0 / contain no-repeat;
+}
+
+@media (max-width: 1000px) {
+    header .leftArrow {
+        left: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    header .leftArrow {
+        left: 50px;
+    }
+}
+
+@media (max-width: 610px) {
+    header .leftArrow {
+        left: 100px;
+        top: 200px
+    }
 }
 
 header .leftArrow:hover {
@@ -198,13 +209,32 @@ header .leftArrow:hover {
 }
 
 header .rightArrow {
-    margin-top: 385px;
-    margin-right: 150px;
-    float: right;
+    position: absolute;
+    top: 475px;
+    right: 150px;
     width: 40px;
     height: 73px;
     background: url("../img/noActiveArrow.png") 0 0 / contain no-repeat;
     transform: rotate(180deg);
+}
+
+@media (max-width: 1000px) {
+    header .rightArrow {
+        right: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    header .rightArrow {
+        right: 50px;
+    }
+}
+
+@media (max-width: 610px) {
+    header .rightArrow {
+        right: 100px;
+        top: 200px;
+    }
 }
 
 header .rightArrow:hover {
@@ -213,9 +243,8 @@ header .rightArrow:hover {
 }
 
 header .headText {
-    margin-left: 109px;
     margin-top: 354px;
-    width: 590px;
+    width: 100%;
     float: left;
     text-align: center;
 }
@@ -248,6 +277,20 @@ header .headText p {
     text-align: center;
 }
 
+@media (max-width: 1450px) {
+    header .headText p {
+        width: 449px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    header .headText p {
+        width: 100%;
+    }
+}
+
 header .headText input {
     margin: 0 auto;
 }
@@ -257,6 +300,12 @@ header .navSlider {
     width: 100%;
     margin-top: 329px;
     margin-bottom: 42px;
+}
+
+@media (max-width: 1450px) {
+    header .navSlider {
+        margin-top: 100px;
+    }
 }
 
 header .navSlider ul {
@@ -285,62 +334,10 @@ header .navSlider ul li:active {
     transform: scale(0.5);
 }
 
-@media (max-width: 1200px) {
-
+@media (max-width: 1840px) {
     #container {
         width: 100%;
-    }
-
-    header .headText {
-        width: 750px;
-        margin-left: 0;
-    }
-
-    header .headText h2 {
-        font-size: 4vw;
-    }
-
-    header .headText h3 {
-        font-size: 5vw;
-    }
-
-    header .headText p {
-        font-size: 3vw;
-        line-height: 3vw;
-    }
-
-    header input {
-        margin-top: 70px !important;
-        margin-bottom: -70px !important;
-    }
-}
-
-@media (max-width: 760px) {
-    header .headText h2 {
-        font-size: 6vw;
-    }
-
-    header .headText h3 {
-        font-size: 8vw;
-    }
-
-    header .headText p {
-        font-size: 4vw;
-        line-height: 4vw;
-    }
-}
-
-@media (max-width: 500px) {
-    header .headText h2 {
-        font-size: 10vw;
-    }
-
-    header .headText h3 {
-        font-size: 13vw;
-    }
-
-    header .headText p {
-        font-size: 5vw;
-        line-height: 5vw;
+        min-width: auto;
+        max-width: none;
     }
 }

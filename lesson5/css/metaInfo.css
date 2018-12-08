@@ -2,8 +2,25 @@
     min-height: 508px;
     background-color:  #191919;
     display: grid;
-    grid-template-columns: 338px repeat(4, 258px) 338px;
+    grid-template-columns:  minmax(0px, 1fr) repeat(auto-fit, 258px)  minmax(0px, 1fr);
     grid-gap: 42px;
+    justify-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1240px) {
+    #metaInfo {
+        grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+        grid-template-rows: 258px auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #metaInfo div {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        margin-top: 0 !important;
+    }
 }
 
 #metaInfo a {
@@ -39,6 +56,12 @@
     width: 270px;
     height: 2px;
     border: 0;
+}
+
+@media (max-width: 610px) {
+    #metaInfo hr {
+        width: 100%;
+    }
 }
 
 #metaInfo > div {

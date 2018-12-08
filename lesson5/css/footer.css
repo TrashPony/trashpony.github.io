@@ -42,3 +42,9 @@ footer a {
 footer a:hover {
     color: #c7b299;
 }
+
+@media (max-width: 1350px) {
+    footer span {
+        margin: 0 !important;
+    }
+}

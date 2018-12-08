@@ -2,14 +2,33 @@
     background-image: url("../img/photo_12.png");
     min-height: 489px;
     display: grid;
-    grid-template-columns: 316px repeat(4, 210px) 314px;
+    grid-template-columns: minmax(0, 1fr) repeat(4, 210px) minmax(0px, 1fr);
     grid-gap: 90px;
+    justify-content: center;
+    height: 489px;
 }
 
+@media (max-width: 1300px) {
+    #sponsorBlock {
+        grid-template-columns: 10px repeat(4, minmax(50px, 210px)) 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #sponsorBlock {
+        grid-template-columns: repeat(2, minmax(50px, 210px));
+        grid-template-rows: 240px auto;
+        padding-bottom: 30px;
+        background: url("../img/photo_12.png") center center / cover;
+    }
+
+    #sponsorBlock a {
+        grid-column: auto !important;
+    }
+}
 #sponsorBlock img {
-    margin-top: 140px;
-    width: 210px;
-    height: 210px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center center;
 }

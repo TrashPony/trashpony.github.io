@@ -41,15 +41,33 @@
     width: 100%;
 }
 
-@media (max-width: 1200px) {
-    #mobDevice aside {
-        margin-top: 50px;
-        float: left;
-        width: 50%;
+@media (max-width: 1500px) {
+    #mobDevice div {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 1230px) {
+    #mobDevice div {
+        margin: 10px auto;
+        float: none;
+        background: url("../img/iPhone.png") center center / contain no-repeat;
+        width: 100%;
     }
 
-    #mobDevice li {
-        font-size: 24px;
-        line-height: 32px; /* Приближение из-за подстановки шрифтов */
+    #mobDevice aside {
+        margin-top: 45px;
+        margin-left: 10px;
+        float: none;
+        width: 95%;
+    }
+
+    #mobDevice aside ul {
+        padding: 0;
+        width: 90%;
+    }
+
+    #mobDevice aside ul li {
+        width: 90%;
     }
 }

@@ -2,11 +2,23 @@
     background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
     text-transform: uppercase;
     display: grid;
-    grid-template-columns: 410px repeat(5, 140px) 410px;
+    grid-template-columns: minmax(0px, 1fr) repeat(auto-fit, 140px) minmax(0px, 1fr);
     grid-gap: 73px;
     align-items: center;
     justify-items: center;
-    height: 300px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 1140px) {
+    #statusBar {
+        grid-template-columns: repeat(auto-fit, 200px);
+        grid-template-rows: 200px auto;
+    }
+
+    #statusBar  > div {
+        grid-column: auto !important;
+    }
 }
 
 #statusBar > div {
